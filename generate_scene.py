@@ -12,7 +12,7 @@ import torch
 @torch.no_grad()
 def main(args):
     # load trajectories
-    trajectories = json.load(open(args.config, "r"))
+    trajectories = json.load(open(args.trajectory_file, "r"))
 
     # check if there is a custom prompt in the first trajectory
     # would use it to generate start image, if we have to
